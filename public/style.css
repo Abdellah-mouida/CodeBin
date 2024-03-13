@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: consolas;
+  box-sizing: border-box;
+}
+
+.hljs,
+body {
+  background-color: #000;
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  gap: 30px;
+  padding: 1rem;
+  color: #555;
+}
+.num {
+  color: #555;
+  font-family: consolas;
+  text-align: end;
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+}
+#code {
+  padding: 0;
+}
+textarea {
+  width: 100%;
+  outline: none;
+  color: #eee;
+  background-color: black;
+  resize: none;
+  border: none;
+  font-size: 1.2rem;
+  font-family: consolas;
+  min-height: calc(100vh - 2rem);
+}
+.controle-btns span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: consolas;
+}
+.controle-btns {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: 0.5s;
+  border-bottom-left-radius: 15px;
+  padding: 1rem;
+}
+.controle-btns:hover {
+  opacity: 1;
+}
+.controle-btns:hover button {
+  opacity: 1;
+}
+.logo {
+  font-size: 2rem;
+  text-align: center;
+}
+.controle-btns button {
+  padding: 0.5rem 1.5rem;
+  background-color: #000;
+  color: #eee;
+  outline: none;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.controle-btns .btns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.controle-btns a {
+  display: inline-block;
+  text-decoration: none;
+}
